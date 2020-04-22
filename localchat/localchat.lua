@@ -1,9 +1,11 @@
-json = require "json"
+-- BedrockX lua mod for localchat
+-- https://github.com/truaddict/bdx-lua-mods
+
+local json = require "json"
 
 
-DISTANCE = 100		-- local chat radius in blocks
-OP_TAG = "admin"  -- use in-game command /tag <player> add <OP_TAG>
-OP_PREFIX = "[§cA§r]"
+local OP_TAG = "admin"  -- use in-game command /tag <player> add <OP_TAG>
+local OP_PREFIX = "[§cA§r]"
 
 
 function rawtext(content)
@@ -19,7 +21,7 @@ function opPrefix(playername)
 end
 
 
-Listen("onChat",function(name,text)
+Listen("onChat", function(name,text)
 
     if(text:sub(1,1) == "!")
     then
