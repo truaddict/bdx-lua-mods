@@ -3,7 +3,7 @@
 
 local json = require "json"
 
-DISTANCE = 100		-- local chat radius in blocks
+local DISTANCE = 100		-- local chat radius in blocks
 local OP_TAG = "admin"  -- use in-game command /tag <player> add <OP_TAG>
 local OP_PREFIX = "[§cA§r]"
 
