@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # shop generator
 # execute in BDS/BDX root dir
 
@@ -62,12 +64,12 @@ def clean_old_files():
     del_file("lua/shop.lua")
 
 def load_json():
-    with open(SHOP_TEMPLATE) as json_file:
+    with open(SHOP_TEMPLATE, encoding="utf-8") as json_file:
         data = json.load(json_file)
         return data
 
 def write_file(filename, text):
-    with open(filename, 'w') as txtfile:
+    with open(filename, 'w', encoding="utf-8") as txtfile:
         txtfile.write(text)
 
 
@@ -113,7 +115,7 @@ def main():
                 'type=dropdown,text=Действие,args=["Купить","Продать"]\n' \
                     f"type=slider,text=Количество,min=1,max=64,def={item['default_amount']}"
             write_file(f"gui/shop_gui/{item['item_name']}_{item['aux_id']}", item_page)
-        sublist_gui = 'text=Назад, img=textures/ui/icon_import'
+        sublist_gui += 'text=Назад, img=textures/ui/icon_import'
         write_file(f"gui/shop_gui/list_{menuitem['id']}", sublist_gui)
         sublist_lua += 'GUI(name, "u_shop")\nend\n\n'
         sublists_lua += sublist_lua
