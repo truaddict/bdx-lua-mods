@@ -1,0 +1,303 @@
+[
+	{
+		"id" : "food",
+		"title" : "Еда",
+		"image" : "items/apple",
+		"items" : [
+			{
+				"item_name" : "cooked_beef",
+				"aux_id" : 0,
+				"title" : "Жареная говядина",
+				"image" : "items/beef_cooked",
+				"default_amount" : 10,
+				"buy_price" : 6,
+				"sell_price" : 3
+			},
+			{
+				"item_name" : "cooked_salmon",
+				"aux_id" : 0,
+				"title" : "Жареный лосось",
+				"image" : "items/fish_salmon_cooked",
+				"default_amount" : 10,
+				"buy_price" : 8,
+				"sell_price" : 4
+			},
+			{
+				"item_name" : "golden_apple",
+				"aux_id" : 0,
+				"title" : "Золотое яблоко",
+				"image" : "items/apple_golden",
+				"default_amount" : 1,
+				"buy_price" : 100,
+				"sell_price" : 80
+			}
+		]
+	},
+
+	{
+		"id" : "wood",
+		"title" : "Дерево",
+		"image" : "blocks/log_oak",
+		"items" : [
+			{
+				"item_name" : "log",
+				"aux_id" : 0,
+				"title" : "Дуб",
+				"image" : "blocks/log_oak",
+				"default_amount" : 32,
+				"buy_price" : 3,
+				"sell_price" : 1
+			},
+			{
+				"item_name" : "log2",
+				"aux_id" : 1,
+				"title" : "Тёмный дуб",
+				"image" : "blocks/log_big_oak",
+				"default_amount" : 32,
+				"buy_price" : 4,
+				"sell_price" : 2
+			},
+			{
+				"item_name" : "log",
+				"aux_id" : 1,
+				"title" : "Сосна",
+				"image" : "blocks/log_spruce",
+				"default_amount" : 32,
+				"buy_price" : 3,
+				"sell_price" : 1
+			},
+			{
+				"item_name" : "log",
+				"aux_id" : 2,
+				"title" : "Берёза",
+				"image" : "blocks/log_birch",
+				"default_amount" : 32,
+				"buy_price" : 3,
+				"sell_price" : 1
+			},
+			{
+				"item_name" : "log2",
+				"aux_id" : 0,
+				"title" : "Акация",
+				"image" : "blocks/log_acacia",
+				"default_amount" : 32,
+				"buy_price" : 4,
+				"sell_price" : 2
+			},
+			{
+				"item_name" : "log",
+				"aux_id" : 3,
+				"title" : "Тропическое дерево",
+				"image" : "blocks/log_jungle",
+				"default_amount" : 32,
+				"buy_price" : 4,
+				"sell_price" : 2
+			}
+		]
+	},
+
+	{
+		"id" : "solidblock",
+		"title" : "Стройматериалы",
+		"image" : "blocks/cobblestone",
+		"items" : [
+			{
+				"item_name" : "cobblestone",
+				"aux_id" : 0,
+				"title" : "Булыжник",
+				"image" : "blocks/cobblestone",
+				"default_amount" : 64,
+				"buy_price" : 2,
+				"sell_price" : 1
+			},
+			{
+				"item_name" : "glass",
+				"aux_id" : 0,
+				"title" : "Стекло",
+				"image" : "blocks/glass",
+				"default_amount" : 32,
+				"buy_price" : 7,
+				"sell_price" : 4
+			},
+			{
+				"item_name" : "obsidian",
+				"aux_id" : 0,
+				"title" : "Обсидиан",
+				"image" : "blocks/obsidian",
+				"default_amount" : 32,
+				"buy_price" : 12,
+				"sell_price" : 7
+			},
+			{
+				"item_name" : "brick_block",
+				"aux_id" : 0,
+				"title" : "Кирпичный блок",
+				"image" : "blocks/brick",
+				"default_amount" : 32,
+				"buy_price" : 8,
+				"sell_price" : 6
+			}
+		]
+	},
+
+	{
+		"id" : "ore",
+		"title" : "Руды",
+		"image" : "blocks/diamond_ore",
+		"items" : [
+			{
+				"item_name" : "coal_block",
+				"aux_id" : 0,
+				"title" : "Угольный блок",
+				"image" : "blocks/coal_block",
+				"default_amount" : 2,
+				"buy_price" : 70,
+				"sell_price" : 50
+			},
+			{
+				"item_name" : "lapis_block",
+				"aux_id" : 0,
+				"title" : "Лазуритовый блок",
+				"image" : "blocks/lapis_block",
+				"default_amount" : 1,
+				"buy_price" : 200,
+				"sell_price" : 170
+			},
+			{
+				"item_name" : "redstone_block",
+				"aux_id" : 0,
+				"title" : "Блок редстоуна",
+				"image" : "blocks/redstone_block",
+				"default_amount" : 1,
+				"buy_price" : 250,
+				"sell_price" : 200
+			},
+			{
+				"item_name" : "iron_block",
+				"aux_id" : 0,
+				"title" : "Железный блок",
+				"image" : "blocks/iron_block",
+				"default_amount" : 1,
+				"buy_price" : 400,
+				"sell_price" : 280
+			},
+			{
+				"item_name" : "gold_block",
+				"aux_id" : 0,
+				"title" : "Золотой блок",
+				"image" : "blocks/gold_block",
+				"default_amount" : 1,
+				"buy_price" : 550,
+				"sell_price" : 430
+			},
+			{
+				"item_name" : "diamond_block",
+				"aux_id" : 0,
+				"title" : "Алмазный блок",
+				"image" : "blocks/diamond_block",
+				"default_amount" : 1,
+				"buy_price" : 950,
+				"sell_price" : 800
+			},
+			{
+				"item_name" : "emerald_block",
+				"aux_id" : 0,
+				"title" : "Изумрудный блок",
+				"image" : "blocks/emerald_block",
+				"default_amount" : 1,
+				"buy_price" : 1400,
+				"sell_price" : 1300
+			}
+		]
+	},
+
+	{
+		"id" : "misc",
+		"title" : "Разные предметы",
+		"image" : "items/name_tag",
+		"items" : [
+			{
+				"item_name" : "name_tag",
+				"aux_id" : 0,
+				"title" : "Бирка",
+				"image" : "items/name_tag",
+				"default_amount" : 1,
+				"buy_price" : 350,
+				"sell_price" : 300
+			},
+			{
+				"item_name" : "bookshelf",
+				"aux_id" : 0,
+				"title" : "Книжный шкаф",
+				"image" : "blocks/bookshelf",
+				"default_amount" : 1,
+				"buy_price" : 200,
+				"sell_price" : 130
+			},
+			{
+				"item_name" : "ender_pearl",
+				"aux_id" : 0,
+				"title" : "Жемчуг Края",
+				"image" : "items/ender_pearl",
+				"default_amount" : 1,
+				"buy_price" : 250,
+				"sell_price" : 200
+			},
+			{
+				"item_name" : "gunpowder",
+				"aux_id" : 0,
+				"title" : "Порох",
+				"image" : "items/gunpowder",
+				"default_amount" : 32,
+				"buy_price" : 10,
+				"sell_price" : 8
+			},
+			{
+				"item_name" : "saddle",
+				"aux_id" : 0,
+				"title" : "Седло",
+				"image" : "items/saddle",
+				"default_amount" : 1,
+				"buy_price" : 50,
+				"sell_price" : 30
+			},
+			{
+				"item_name" : "blaze_rod",
+				"aux_id" : 0,
+				"title" : "Огненный стержень",
+				"image" : "items/blaze_rod",
+				"default_amount" : 1,
+				"buy_price" : 300,
+				"sell_price" : 250
+			},
+			{
+				"item_name" : "elytra",
+				"aux_id" : 0,
+				"title" : "Элитры",
+				"image" : "items/elytra",
+				"default_amount" : 1,
+				"buy_price" : 1700,
+				"sell_price" : 1500
+			},
+			{
+				"item_name" : "phantom_membrane",
+				"aux_id" : 0,
+				"title" : "Мембрана фантома",
+				"image" : "items/phantom_membrane",
+				"default_amount" : 1,
+				"buy_price" : 420,
+				"sell_price" : 370
+			},
+			{
+				"item_name" : "nether_wart",
+				"aux_id" : 0,
+				"title" : "Адский нарост",
+				"image" : "items/nether_wart",
+				"default_amount" : 1,
+				"buy_price" : 40,
+				"sell_price" : 20
+			}
+		]
+	}
+
+]
