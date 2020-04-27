@@ -21,7 +21,7 @@ function generic_item(name, raw, data, item, subid, price1, price2)
             --invapi.giveItem(name, item, number, subid)
             runCmd(string.format('give %s %s %i %i', name, item, number, subid))
             sendText(name, "§aВы приобрели товар и потратили §l§6" .. price1_total .. " ")
-            GUI(name, "shop")
+            GUI(name, "u_shop")
             return
         else
             sendText(name, "§cНе хватает денег.")
@@ -33,7 +33,7 @@ function generic_item(name, raw, data, item, subid, price1, price2)
         if safe_clear(name, string.format("%s %i", item, subid), number) then
             addMoney(name, price2_total)
             sendText(name, "§aВы продали товар и заработали §l§6" .. price2_total .. " ")
-            GUI(name, "shop")
+            GUI(name, "u_shop")
             return
         else
             sendText(name, "§cНедостаточно вещей для продажи.")
