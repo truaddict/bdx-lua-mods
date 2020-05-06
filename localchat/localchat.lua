@@ -45,7 +45,7 @@ Listen("onChat", function(name,text)
     if(text:sub(1,1) == "!")
     then
     	--global chat
-		runCmd("tellraw @a " .. rawtext("§6Ⓖ§r " .. opPrefix(name) .. ": " .. text:sub(2)))
+		runCmd("tellraw @a " .. rawtext("§6Ⓖ§r " .. get_cname(name) .. ": " .. text:sub(2)))
     else
 		--local chat
 		runCmd(string.format("execute \"%s\" ~ ~ ~ tellraw @a[r=%i] %s", name, DISTANCE, rawtext("§3Ⓛ§r " .. get_cname(name) .. ": " .. text)))
