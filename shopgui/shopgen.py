@@ -30,8 +30,13 @@ function generic_item(name, raw, data, item, subid, price1, price2)
         end
     end
     if raw[1] == 1 then
-        local price2_total = number * price2
-        if safe_clear(name, string.format("%s %i", item, subid), number) then
+        local price2_total = number * price2        
+        if subid == 0 then
+		    item_str = item
+		else
+		    item_str = string.format("%s %i", item, subid)
+		end
+        if safe_clear(name, item_str, number) then
             addMoney(name, price2_total)
             Log("SELL", name, item, subid, price2, number, price2_total)
             sendText(name, "§aВы продали товар и заработали §l§6" .. price2_total .. " ")
