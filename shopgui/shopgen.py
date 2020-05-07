@@ -20,6 +20,7 @@ function generic_item(name, raw, data, item, subid, price1, price2)
         if rdMoney(name, price1_total) then
             --invapi.giveItem(name, item, number, subid)
             runCmd(string.format('give %s %s %i %i', name, item, number, subid))
+            Log("BUY", name, item, subid, price1, number, price1_total)
             sendText(name, "§aВы приобрели товар и потратили §l§6" .. price1_total .. " ")
             GUI(name, "u_shop")
             return
@@ -32,6 +33,7 @@ function generic_item(name, raw, data, item, subid, price1, price2)
         local price2_total = number * price2
         if safe_clear(name, string.format("%s %i", item, subid), number) then
             addMoney(name, price2_total)
+            Log("SELL", name, item, subid, price2, number, price2_total)
             sendText(name, "§aВы продали товар и заработали §l§6" .. price2_total .. " ")
             GUI(name, "u_shop")
             return
